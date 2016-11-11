@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1"
+ xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+ <display-name>bookJavaWeb5_5</display-name>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <!-- sevlet注册 -->
+ <servlet>
+ 	<servlet-name>RegServlet</servlet-name>
+ 	<servlet-class>servlet.RegServlet</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>LoginServlet</servlet-name>
+ 	<servlet-class>servlet.LoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>ExitServlet</servlet-name>
+ 	<servlet-class>servlet.ExitServlet</servlet-class>
+ </servlet>
+ <!-- sevlet映射 -->
+ <servlet-mapping>
+ 	<servlet-name>RegServlet</servlet-name>
+ 	<url-pattern>/reg.action</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>LoginServlet</servlet-name>
+ 	<url-pattern>/log.action</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>ExitServlet</servlet-name>
+ 	<url-pattern>/exit.action</url-pattern>
+ </servlet-mapping>
+</web-app>
